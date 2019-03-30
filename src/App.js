@@ -46,6 +46,7 @@ deleteTodo(index) {
   render() {
     return (
       <div className="App">
+        <h1>React To-Do List</h1>
         <ul>
           { this.state.todos.map( (todo, index) =>
             <ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } toggleComplete={ () => this.toggleComplete(index)} isDeleted={ todo.isDeleted } deleteTodo={ () => this.deleteTodo(index) } />
